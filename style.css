@@ -1,0 +1,112 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+:root {
+    --answer-padding: 10px;
+}
+
+@media(max-width: 700px) {
+    article {
+        width: 95%;
+    }
+
+}
+
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choice-grid div {
+    width: calc(32.5% - 2*var(--answer-padding));
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding: var(--answer-padding);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.choice-grid span {
+   display: flex;
+   flex-direction: row;
+   text-align:left;
+   font-size: 16px;
+   color: green;
+   justify-content: space-between;
+}
+
+
+.choice-grid span img{
+  text-align: right;
+  width: 20px;
+  height: 20px;
+
+}
+
+
+@media(max-width: 500px) {
+    .choice-grid div {
+        width: calc(49% - 2*var(--answer-padding));
+    }
+}
+
+
+.choice-grid div img.checkbox {
+    margin-bottom: 0px;
+}
+
+.choice-grid div.selected {
+    background-color: #cfe3ff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.deselected {
+    opacity: 0.6;
+}
+
+.hidden {
+    display: none;
+}
+
+.nascosta
+{
+   display: none;
+}
+
+
+.flex-container {
+  display: flex;
+  background-color: white;
+}
+
+.flex-item {
+  background-color: white;
+  width: 50%;
+  margin: 2px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+
+ .left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.piu{
+  font-size: 15px;
+  color: blue;
+}
+
+.meno{
+  font-size: 15px;
+  color: red;
+}

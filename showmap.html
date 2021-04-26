@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+    <title>Mappa dell'ospedale</title>
+    <script src="constants.js" defer="true"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <link rel="stylesheet" type="text/css" href="mappe.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script src='mappe.js' defer="true"></script>
+  </head>
+  <body id="markers-on-the-map">
+    <div class="page-header">
+    <div class="flex-container">
+      <div class="flex-item dettaglio"><a href="#">Mostra Ospedale</a></div>
+      <div class="flex-item dettaglio"> <a href="api_oauth.html">Contagiati da CORONAVIRUS</a></div>
+      <div class="flex-item"><a href="index.html">Torna alla ricerca</a>
+        </div>
+    </div>
+    <p id="titolo"></p>
+    <div id="map"></div>
+  </div>
+  </body>
+</html>

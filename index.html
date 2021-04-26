@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Prenotazioni</title>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="provided-style.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="constants.js" defer="true"></script>
+    <script src="script.js" defer="true"></script>
+  </head>
+
+  <body onload="Inizializza('')">
+    <article>
+      <header>
+          <h1>NETWORK SANITARIO COVID-19</h1>
+      </header>
+      <section>
+        <strong>Preferiti:</strong>
+      </section>
+      <section id="preferiti" class="choice-grid" class="nascosta">
+      </section>
+      <div class="flex-container">
+        <div class="flex-item left"><strong>Scegli l'ospedale in cui prenotare<br> o clicca per vedere la mappa</strong></div>
+        <div class="flex-item right">Cerca:<input type="text" id="testo"></div>
+      </div>
+      <section id="griglia" class="choice-grid">
+      </section>
+
+    </article>
+  </body>
+</html>
